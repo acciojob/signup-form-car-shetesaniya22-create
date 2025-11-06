@@ -9,47 +9,44 @@
 <body>
 	<!-- the entire body must be written by student -->
      <form method="post">
-		<label for="name">Name: </label>
-		<input type="text" id="name" placeholder="Name" required><br><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
 
-		<label for="email">Email: </label>
-		<input type="email" id="email" placeholder="Email" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
 
-		<p>Gender:</p>
-		<input type="radio" id="gender_m" name="gender" required>
-		<label for="gender_m">Male</label><br>
-		<input type="radio" id="gender_f" name="gender" required>
-        <label for="gender_f">Female</label><br><br>
+    <p>Gender:</p>
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label><br>
+    <input type="radio" id="gender_f" name="gender" value="female" required>
+    <label for="gender_f">Female</label><br><br>
 
-	
-		<label for="cars">Car Brand:</label>
-        <select id="cars">
-        <option value="">--Please choose an option--</option>
-        <option value="Mercedes">Mercedes</option>
-        <option value="XUV700">XUV700</option>
-        <option value="Fortuner">Fortuner</option>
-		</select ><br><br>
+    <label for="cars">Car Brands:</label>
+    <select id="cars" name="cars" required>
+      <option value="">--Please choose an option--</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="XUV700">XUV700</option>
+      <option value="Fortuner">Fortuner</option>
+    </select><br><br>
 
-		<label for="age">Age</label>
-		<input type="number" id="age" placeholder="Age" required><br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Age" required><br><br>
 
-		<label for="dob">DOB</label>
-		<input type="date" id="dateOfBirth" required><br><br>
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
 
-		<label for="tel">Phone Number</label>
-		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br><br>
+    <label for="tel">Phone Number:</label>
+    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"><br><br>
 
-		<label for="password">Password</label>
-		<input type="password" id="password" placeholder="password" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Password" required><br><br>
 
-	<p>I agree to the TOS</p>
-    <input type="checkbox" id="tos" required>
-    <label for="tos">Yes</label><br><br>
+    <input type="checkbox" id="tos" name="tos" required>
+    <label for="tos">I agree to the TOS</label><br><br>
 
-	<input type="button" value="Submit">
-		
-	</form>
-   
+    <button type="submit">Submit</button>
+  </form>
+
     
     <script type="text/javascript" src="./script.js">
 </script>
